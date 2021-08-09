@@ -14,7 +14,6 @@
     <meta name="salesforce-client-id" content="3MVG90J3nJBMnqrQGsSVKdT50.aeLCsB3yH0WXCJCiaPZISpX8MUvJTDRZSH6UXY4fYlYxFio6E0uF5JhqKTW">
     <meta name="salesforce-redirect-uri" content="https://embeddedlogin-test.herokuapp.com/_callback.php">
     <meta name="salesforce-mode" content="modal">
-    <meta name="salesforce-namespace" content="<?php echo getenv('SALESFORCE_NAMESPACE');?>">
     <meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-save-access-token" content="true">
     <meta name="salesforce-forgot-password-enabled" content="false">
