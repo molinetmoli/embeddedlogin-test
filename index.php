@@ -10,20 +10,20 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600" type="text/css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
 	
-    <meta name="salesforce-community" content="https://uat-bergec.cs129.force.com/AppMovil">
-    <meta name="salesforce-client-id" content="3MVG90J3nJBMnqrQGsSVKdT50.aeLCsB3yH0WXCJCiaPZISpX8MUvJTDRZSH6UXY4fYlYxFio6E0uF5JhqKTW">
-    <meta name="salesforce-redirect-uri" content="https://embeddedlogin-test.herokuapp.com/_callback.php">
-    <meta name="salesforce-mode" content="modal">
+    <meta name="salesforce-community" content="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>">
+    <meta name="salesforce-client-id" content="<?php echo getenv('SALESFORCE_CLIENT_ID');?>">
+    <meta name="salesforce-redirect-uri" content="https://<?php echo getenv('SALESFORCE_HEROKUAPP_URL');?>/_callback.php">
+    <meta name="salesforce-mode" content="<?php echo getenv('SALESFORCE_MODE');?>">
     <meta name="salesforce-namespace" content="<?php echo getenv('SALESFORCE_NAMESPACE');?>">
     <meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-save-access-token" content="true">
-    <meta name="salesforce-forgot-password-enabled" content="false">
-    <meta name="salesforce-self-register-enabled" content="false">
+    <meta name="salesforce-forgot-password-enabled" content="<?php echo getenv('SALESFORCE_FORGOT_PASSWORD_ENABLED');?>">
+    <meta name="salesforce-self-register-enabled" content="<?php echo getenv('SALESFORCE_SELF_REGISTER_ENABLED');?>">
     <meta name="salesforce-login-handler" content="onLogin">
     <meta name="salesforce-logout-handler" content="onLogout">
-    <meta name="salesforce-mask-redirects" content="true">
-	<link href="https://uat-bergec.cs129.force.com/AppMovil/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
-    <script src="https://uat-bergec.cs129.force.com/AppMovil/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+    <meta name="salesforce-mask-redirects" content="<?php echo getenv('SALESFORCE_MASK_REDIRECTS');?>">
+	<link href="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
+    <script src="https://<?php echo getenv('SALESFORCE_COMMUNITY_URL');?>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
   </head>
   
   <body>
