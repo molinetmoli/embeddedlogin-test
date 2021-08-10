@@ -16,7 +16,7 @@
     <meta name="salesforce-mode" content="modal">
     <meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-save-access-token" content="true">
-    <meta name="salesforce-forgot-password-enabled" content="false">
+    <meta name="salesforce-forgot-password-enabled" content="true">
     <meta name="salesforce-self-register-enabled" content="true">
     <meta name="salesforce-login-handler" content="onLogin">
     <meta name="salesforce-logout-handler" content="onLogout">
